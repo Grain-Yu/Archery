@@ -50,7 +50,6 @@ urlpatterns = [
     path("sqlquery/", views.sqlquery),
     path("slowquery/", views.slowquery),
     path("sqladvisor/", views.sqladvisor),
-    path("sqlreview/", views.sqlreview),
     path("slowquery_advisor/", views.sqladvisor),
     path("queryapplylist/", views.queryapplylist),
     path(
@@ -138,8 +137,6 @@ urlpatterns = [
     path("binlog/del_log/", binlog.del_binlog),
     path("slowquery/review/", slowlog.slowquery_review),
     path("slowquery/review_history/", slowlog.slowquery_review_history),
-    path("sqlreview/list/", slowlog.listreview),
-    path("sqlreview/edit/", slowlog.editreview),
     path("slowquery/optimize_sqladvisor/", sql.sql_optimize.optimize_sqladvisor),
     path("slowquery/optimize_sqltuning/", sql.sql_optimize.optimize_sqltuning),
     path("slowquery/optimize_soar/", sql.sql_optimize.optimize_soar),
